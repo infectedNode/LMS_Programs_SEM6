@@ -19,7 +19,7 @@ else:
     rec1 = {}
     rec2 = {}
 
-    # storing the count(VALUE) of each alphabet(KEY) in the string
+    # storing the count(VALUE) of each alphabet(KEY) of the string
     for i in string1:
         if i in rec1:
             rec1[i] += 1
