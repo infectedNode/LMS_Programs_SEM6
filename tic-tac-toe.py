@@ -108,3 +108,16 @@ while(True):
             print('\n\n*** Congratulations Player 2 ( {} ), You Win! ***'.format(mark2))
             break
         turn = 1
+
+    # Condition for a draw
+    isDraw = 1
+    for x in boardStatus:
+            if(x == ''):
+                isDraw = 0
+                break 
+
+    if(isDraw == 1):
+        print('\n\n')
+        displayBoard(boardStatus)
+        print('\n\n*** Game Draw! ***')
+        break
