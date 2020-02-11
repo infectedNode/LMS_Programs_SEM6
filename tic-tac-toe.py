@@ -60,14 +60,21 @@ def check(status,marker):
 
 
 # Game Starts Here
-print('\n\n\tTic Tac Toe\tby Shivam Sharma')
+print('\n<--------------------- Tic Tac Toe --------------------->')
+print('\n\ndeveloped by: Shivam Sharma')
 
-mark1 = input('Player 1, what marker will you choose ( X or O ): ').upper()
+# Board Mapping Demo
+print('\nBoard mapping:-\n')
+mapping = ['1','2','3','4','5','6','7','8','9']
+displayBoard(mapping)
+
+mark1 = input('\n\nPlayer 1, what marker will you choose ( X or O ): ').upper()
 
 if(mark1 == 'X'):
     mark2 = 'O'
 else:
     mark2 = 'X'
+    mark1 = 'O'
 
 # Initialising board with nothing marked
 boardStatus = ['','','','','','','','',''];
