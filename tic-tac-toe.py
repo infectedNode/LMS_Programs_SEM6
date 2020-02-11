@@ -59,6 +59,8 @@ def check(status,marker):
         return False        
 
 
+# Game Starts Here
+print('\n\n\tTic Tac Toe\tby Shivam Sharma')
 
 mark1 = input('Player 1, what marker will you choose ( X or O ): ').upper()
 
