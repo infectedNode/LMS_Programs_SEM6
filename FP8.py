@@ -11,43 +11,4 @@
 string1 = input()
 string2 = input()
 
-if(len(string1) != len(string2)):
-    # if length is not equal they cannot be anagrams
-    print('False')
-else:
-    # initialising empty Dictionaries
-    rec1 = {}
-    rec2 = {}
-
-    # storing the count(VALUE) of each alphabet(KEY) of the string
-    for i in string1:
-        if i in rec1:
-            rec1[i] += 1
-        else:
-            rec1[i] = 1
-
-    for i in string2:
-        if i in rec2:
-            rec2[i] += 1
-        else:
-            rec2[i] = 1
-
-    # assuming they are anagrams
-    isPossible = 1
-
-    for x in rec1:
-        # checking if an alphabet is present in both the records
-        if x in rec2:
-            # checking the count of an alphabet in records are same
-            if(rec1[x] != rec2[x]):
-                isPossible = 0
-                break
-        else:
-            isPossible = 0
-            break
-
-    # Printing Result
-    if(isPossible == 1):
-        print('True')
-    else:
-        print('False')
+print(sorted(string1) == sorted(string2))
