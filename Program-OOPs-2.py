@@ -12,7 +12,7 @@ class Students:
         for x in self.marks:
             sum += x
         return (sum/len(self.marks))
-
+``
 # name = input()
 
 name = "Shivam"
